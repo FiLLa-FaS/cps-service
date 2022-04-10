@@ -1,0 +1,23 @@
+.tools-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tools-links::before {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+
+@media screen and (min-width: 1000px) {
+    .tools-links {
+        gap: 32px;
+    }
+
+    .tools-links::before {
+        display: none;
+    }
+}

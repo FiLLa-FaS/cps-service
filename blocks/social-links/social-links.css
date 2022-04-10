@@ -1,0 +1,10 @@
+.social-links {
+    display: none;
+    gap: 16px;
+}
+
+@media screen and (min-width: 500px) {
+    .social-links {
+        display: flex;
+    }
+}

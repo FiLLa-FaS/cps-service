@@ -1,4 +1,19 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
 
-@import url(../blocks/page/page.css);
+@import url('../blocks/page/page.css');
+
+@import url('../blocks/about/about.css');
+@import url('../blocks/about/__title/about__title.css');
+
+@import url('../blocks/menu/menu.css');
+@import url('../blocks/menu/__column/menu__column.css');
+
+@import url('../blocks/logo/logo.css');
+
+@import url('../blocks/social-links/social-links.css');
+
+@import url('../blocks/tools-links/tools-links.css');
+@import url('../blocks/tools-links/--mobile/tools-links--mobile.css');
+
+@import url('../blocks/link/link.css');
