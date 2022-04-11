@@ -1,0 +1,7 @@
+@media screen and (min-width: 1000px) {
+    .about__top-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 42px 25px 0 0;
+    }
+}

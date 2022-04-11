@@ -1,0 +1,22 @@
+.slide-menu {
+    padding: 0;
+    margin: 24px 16px;
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 500px) {
+    .slide-menu {
+        margin: 32px 24px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .slide-menu {
+        flex-wrap: wrap;
+        overflow: visible;
+        margin: 8px 25px 8px 32px;
+    }
+}

@@ -1,11 +1,16 @@
 .about {
     background-color: #F8F8F8;
+    padding-bottom: 35px;
+}
+
+@media screen and (min-width: 650px) {
+    .about {
+        padding-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     .about {
-        display: flex;
-        justify-content: space-between;
-        padding: 42px 25px 0 0;
+        padding-bottom: 50px;
     }
 }

@@ -1,0 +1,15 @@
+.about__info-container {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 650px) {
+    .about__info-container {
+        padding: 0 0 0 24px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about__info-container {
+        padding: 8px 0 0 34px;
+    }
+}

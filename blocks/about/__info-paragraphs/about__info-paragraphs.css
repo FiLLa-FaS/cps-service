@@ -1,0 +1,10 @@
+.about__info-paragraphs {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 650px) {
+    .about__info-paragraphs {
+        max-height: 160px;
+    }
+}

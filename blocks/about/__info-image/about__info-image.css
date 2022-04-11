@@ -1,0 +1,22 @@
+.about__info-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 650px) {
+    .about__info-image {
+        width: 360px;
+        margin: 0 25px 0 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about__info-image {
+        width: 531px;
+    }
+}
