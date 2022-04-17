@@ -1,30 +1,11 @@
 @import url('../vendor/normalize.css');
-@import url('../vendor/fonts/fonts.css');
+@import url('../assets/fonts/fonts.css');
 
-@import url('../blocks/page/page.css');
-
-@import url('../blocks/about/about.css');
-@import url('../blocks/about/__title/about__title.css');
-@import url('../blocks/about/__top-container/about__top-container.css');
-@import url('../blocks/about/__bottom-container/about__bottom-container.css');
-@import url('../blocks/about/__info-container/about__info-container.css');
-@import url('../blocks/about/__info-paragraphs/about__info-paragraphs.css');
-@import url('../blocks/about/__info-paragraph/about__info-paragraph.css');
-@import url('../blocks/about/__info-image/about__info-image.css');
-@import url('../blocks/about/__info-expand/about__info-expand.css');
-
-@import url('../blocks/menu/menu.css');
-@import url('../blocks/menu/__column/menu__column.css');
-
-@import url('../blocks/logo/logo.css');
-
-@import url('../blocks/social-links/social-links.css');
-
-@import url('../blocks/tools-links/tools-links.css');
-@import url('../blocks/tools-links/--mobile/tools-links--mobile.css');
-
-@import url('../blocks/link/link.css');
-
-@import url('../blocks/slide-menu/slide-menu.css');
-@import url('../blocks/slide-menu/__link/slide-menu__link.css');
-@import url('../blocks/slide-menu/__link/--active/slide-menu__link--active.css');
+@import url('../styles/page.css');
+@import url('../styles/about.css');
+@import url('../styles/menu.css');
+@import url('../styles/logo.css');
+@import url('../styles/social-links.css');
+@import url('../styles/tools-links.css');
+@import url('../styles/link.css');
+@import url('../styles/slide-menu.css');

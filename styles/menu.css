@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+    background-color: #FFF;
+}
+
+.menu__column {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+}
