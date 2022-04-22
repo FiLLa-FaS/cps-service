@@ -1,9 +1,0 @@
-.tools-links--mobile {
-    display: none;
-}
-
-@media screen and (min-width: 1000px) {
-    .tools-links--mobile {
-        display: flex;
-    }
-}
