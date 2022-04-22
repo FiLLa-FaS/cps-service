@@ -15,8 +15,11 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    background-color: transparent;
+    border: none;
     text-decoration: none;
     margin: 16px 0 0;
+    cursor: pointer;
     transition: opacity 0.2s linear;
 }
 
@@ -70,6 +73,10 @@
     border-radius: 50% 0 0 50%;
 }
 
+.about__slide-menu {
+    margin: 24px 16px;
+}
+
 @media screen and (min-width: 650px) {
     .about {
         padding-bottom: 40px;
@@ -102,12 +109,16 @@
         max-height: 160px;
     }
 
+    .about__slide-menu {
+        margin: 32px 24px;
+    }
 
 }
 
 @media screen and (min-width: 1000px) {
     .about {
         padding-bottom: 50px;
+        max-width: 1120px;
     }
 
     .about__bottom-container {
@@ -134,5 +145,9 @@
         display: flex;
         justify-content: space-between;
         padding: 42px 25px 0 0;
+    }
+
+    .about__slide-menu {
+        margin: 8px 25px 8px 32px;
     }
 }
