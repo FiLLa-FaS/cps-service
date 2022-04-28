@@ -6,10 +6,33 @@
     background-color: #FFF;
 }
 
+.menu__link {
+    display: flex;
+    align-items: center;
+}
+
 .menu__column {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.menu__link::after {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    display: none;
+    transform: translateX(20px);
+}
+
+
+@media screen and (min-width: 500px) {
+    .menu__link::after {
+        display: flex;
+        
+    }
 }
 
 @media screen and (min-width: 1000px) {

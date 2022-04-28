@@ -10,76 +10,46 @@
 </head>
 
 <body class="page">
-    <section class="about">
-        <div class="about__top-container">
-            <div class="about__menu menu">
-                <div class="menu__column">
-                    <a class="menu__link link" href="#">
-                        <img class="link__icon" src="./assets/images/burger.svg" alt="Иконка бургера">
-                    </a>
-                    <a class="menu__logo logo" href=""></a>
-                </div>
-                <div class="menu__column">
-                    <div class="social-links">
-                        <a class="social-links__link link" href="#">
-                            <img class="link__icon" src="./assets/images/call.svg" alt="Звонок">
-                        </a>
-                        <a class="social-links__link link" href="#">
-                            <img class="link__icon" src="./assets/images/chat.svg" alt="Написать сообщение">
-                        </a>
-                        <a class="social-links__link link" href="#">
-                            <img class="link__icon" src="./assets/images/profile.svg" alt="Профиль">
-                        </a>
-                    </div>
-                    <div class="tools-links">
-                        <a class="tools-links__link link" href="#">
-                            <img class="link__icon" src="./assets/images/repair.svg" alt="Оставить заявку">
-                        </a>
-                        <a class="tools-links__link  link" href="#">
-                            <img class="link__icon" src="./assets/images/checkstatus.svg" alt="Проверить статус">
-                        </a>
-                    </div>
-                </div>
+    
+    <aside class="nav-menu">
+        <div class="nav-menu__top">
+            <div class="nav-menu__top-column">
+                <button class="nav-menu__close-btn link" type="button"></button>
+                <a class="nav-menu__logo logo" href=""></a>
             </div>
-            <h1 class="about__title">Услуги и сервисы</h1>
-            <div class="tools-links tools-links--mobile">
-                <a class="tools-links__link link" href="#">
-                    Оставить заявку <img class="link__icon" src="./assets/images/repair.svg" alt="Оставить заявку">
-                </a>
-                <a class="tools-links__link  link" href="#">
-                    Статус ремонта <img class="link__icon" src="./assets/images/checkstatus.svg" alt="Проверить статус">
-                </a>
-            </div>
+            <button class="nav-menu__search-btn link" type="button"></button>
         </div>
-
-        <ul class="about__slide-menu slide-menu">
-            <li><a href="#" class="slide-menu__link">Ремонтируемые бренды</a></li>
-            <li><a href="#" class="slide-menu__link">Ремонтируемые устройства</a></li>
-            <li><a href="#" class="slide-menu__link">Цены на услуги</a></li>
-            <li><a href="#" class="slide-menu__link">Адреса сервисных центров</a></li>
-            <li><a href="#" class="slide-menu__link">Специальные цены</a></li>
-            <li><a href="#" class="slide-menu__link">Отзывы</a></li>
+        <nav class="nav-menu__navigation">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link nav-menu__link--active link">Ремонт техники</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Услуги и сервисы</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Корпоративным клиентам</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Продавцам техники</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Партнерам</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Производителям</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Наши сервисные центры</a></li>
+                <li class="nav-menu__list-item"><a href="#" class="nav-menu__link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="nav-menu__social-links social-links">
+            <a class="social-links__link link" href="#">
+                <img class="link__icon" src="./assets/images/call.svg" alt="Звонок">
+            </a>
+            <a class="social-links__link link" href="#">
+                <img class="link__icon" src="./assets/images/chat.svg" alt="Написать сообщение">
+            </a>
+            <a class="social-links__link link" href="#">
+                <img class="link__icon" src="./assets/images/profile.svg" alt="Профиль">
+            </a>
+        </div>
+        <p class="nav-menu__email">mail@cps.com</p>
+        <p class="nav-menu__phone">8 800 890 8900</p>
+        <ul class="nav-menu__langs">
+            <li><a href="#" class="nav-menu__lang nav-menu__lang--active link">Ru</a></li>
+            <li><a href="#" class="nav-menu__lang link">En</a></li>
+            <li><a href="#" class="nav-menu__lang link">Ch</a></li>
         </ul>
-
-        <div class="about__bottom-container">
-            <div class="about__info-container">
-                <div class="about__info-paragraphs">
-                    <p class="about__info-paragraph">Мы являемся авторизованным сервисным центром по ремонту техники
-                        Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
-                        производителя.</p>
-                    <p class="about__info-paragraph">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                        и, в свою очередь, советуют нас родным и близким.
-                    </p>
-                </div>
-                <button type="button" class="about__info-expand"><img src="./assets/images/expand.svg"
-                        alt="Стрелка вниз" class="about__info-icon">Читать далее</button>
-            </div>
-            <img src="./assets/images/about.png" alt="Вывеска с названием компании и часами работы"
-                class="about__info-image">
-        </div>
-    </section>
+    </aside>
 </body>
 
 </html>
