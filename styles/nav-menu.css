@@ -16,111 +16,19 @@
     justify-content: space-between;
 }
 
-.nav-menu__top-column {
-    display: flex;
-    align-items: center;
+.nav-menu__logo {
+    margin-left: 24px;
 }
 
-.nav-menu__close-btn {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    background-image: url('../assets/images/close.svg');
-    cursor: pointer;
-}
-
-.nav-menu__search-btn {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    background-image: url('../assets/images/search.svg');
-    cursor: pointer;
-}
-
-.nav-menu__list {
-    list-style: none;
-    margin: 50px 0 0;
-    padding: 0;
-}
-
-.nav-menu__list-item {
-    margin-bottom: 32px;
-}
-
-.nav-menu__list-item:last-of-type {
-    margin-bottom: 0;
-}
-
-.nav-menu__link {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    text-decoration: none;
-}
-
-.nav-menu__link--active {
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: #7E7E82;
-    pointer-events: none;
-}
-
-.nav-menu__link--active::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    height: 32px;
-    width: 4px;
-    background: #41F6D7;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    border-radius: 50% 0 0 50%;
+.nav-menu__search {
+    margin-left: auto;
 }
 
 .nav-menu__social-links {
+    display: flex;
     margin-top: 268px;
 }
 
-.nav-menu__email {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    margin: 16px 0 0;
-}
-
-.nav-menu__phone {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-    margin: 12px 0 0;
-}
-
 .nav-menu__langs {
-    display: flex;
-    gap: 7px;
-    list-style: none;
-    padding: 0;
     margin: 40px 0 0;
-}
-
-.nav-menu__lang {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    color: #1B1C21;
-    text-decoration: none;
-}
-
-.nav-menu__lang--active {
-    color: #7E7E82;
 }

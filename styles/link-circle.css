@@ -1,0 +1,46 @@
+.link-circle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s linear;
+}
+
+.link-circle:hover {
+    opacity: 0.7;
+}
+
+.link-circle--type--close {
+    background-image: url('../assets/images/close.svg');
+}
+
+.link-circle--type--search {
+    background-image: url('../assets/images/search.svg');
+}
+
+.link-circle--type--call {
+    background-image: url('../assets/images/call.svg');
+}
+
+.link-circle--type--chat {
+    background-image: url('../assets/images/chat.svg');
+}
+
+.link-circle--type--profile {
+    background-image: url('../assets/images/profile.svg');
+}
+
+.link-circle--type--burger {
+    background-image: url('../assets/images/burger.svg');
+}
+
+.link-circle--type--repair {
+    background-image: url('../assets/images/repair.svg');
+}
+
+.link-circle--type--status {
+    background-image: url('../assets/images/checkstatus.svg');
+}
