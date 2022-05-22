@@ -44,3 +44,7 @@
 .link-circle--type--status {
     background-image: url('../assets/images/checkstatus.svg');
 }
+
+.link-circle--type--forward {
+    background-image: url('../assets/images/go.svg');
+}

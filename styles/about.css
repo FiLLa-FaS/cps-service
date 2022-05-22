@@ -8,23 +8,7 @@
 }
 
 .about__info-expand {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: #1B1C21;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
     margin: 16px 0 0;
-    cursor: pointer;
-    transition: opacity 0.2s linear;
-}
-
-.about__info-expand:hover {
-    opacity: 0.7;
 }
 
 .about__info-image {

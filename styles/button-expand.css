@@ -1,0 +1,30 @@
+.button-expand {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+    padding: 0;
+}
+
+.button-expand::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/images/expand.svg');
+}
+
+.button-expand--inverse::before {
+    transform: rotate(180deg);
+}
+
+.button-expand:hover {
+    opacity: 0.7;
+}
