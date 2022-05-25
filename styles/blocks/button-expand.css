@@ -18,7 +18,7 @@
     content: '';
     width: 24px;
     height: 24px;
-    background-image: url('../assets/images/expand.svg');
+    background-image: url('../../assets/images/expand.svg');
 }
 
 .button-expand--inverse::before {

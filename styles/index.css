@@ -1,0 +1,22 @@
+@import url('normalize.css');
+@import url('../assets/fonts/fonts.css');
+
+@import url('blocks/page.css');
+@import url('blocks/button-expand.css');
+@import url('blocks/about.css');
+@import url('blocks/menu.css');
+@import url('blocks/logo.css');
+@import url('blocks/social-links.css');
+@import url('blocks/tools-links.css');
+@import url('blocks/link.css');
+@import url('blocks/link-circle.css');
+@import url('blocks/slide-menu.css');
+
+@import url('blocks/nav-menu.css');
+@import url('blocks/contacts.css');
+@import url('blocks/langs.css');
+@import url('blocks/navigation.css');
+
+@import url('blocks/service.css');
+@import url('blocks/card.css');
+@import url('swiper.css');
