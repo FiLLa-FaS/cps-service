@@ -1,0 +1,46 @@
+.swiper {
+    width: 100%;
+
+    &--type--brands {
+        height: 116px;
+
+        @media screen and (min-width: $screen-md) {
+            height: auto;
+        }
+    }
+
+    &--type--technics {
+        height: 204px;
+
+        @media screen and (min-width: $screen-md) {
+            height: auto;
+        }
+    }
+
+    &--type--prices {
+        height: 244px;
+
+        @media screen and (min-width: $screen-md) {
+            height: auto;
+        }
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-slide {
+    @media screen and (min-width: $screen-md) {
+        width: auto;
+    }
+}

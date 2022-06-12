@@ -1,0 +1,49 @@
+.footer {
+    border-top: 1px solid #D9FFF5;
+    padding: 16px 15px 20px;
+
+    @media screen and (min-width: $screen-md) {
+        padding: 32px 24px 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+        padding: 32px 32px 22px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #7E7E82;
+        opacity: 0.72;
+        margin: 16px 0 0;
+
+        &:first-of-type {
+            margin: 0;
+        }
+
+        @media screen and (min-width: $screen-md) {
+            margin: 0;
+            max-width: 220px;
+        }
+
+        @media screen and (min-width: $screen-lg) {
+            max-width: 330px;
+        }
+
+        &_type_copyright {
+            @media screen and (min-width: $screen-md) {
+                text-align: left;
+                max-width: 220px;
+            }
+        }
+
+        &_type_offer {
+            @media screen and (min-width: $screen-md) {
+                text-align: right;
+            }
+        }
+    }
+}

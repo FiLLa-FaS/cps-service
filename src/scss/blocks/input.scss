@@ -1,0 +1,20 @@
+.input {
+    height: 48px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    &::placeholder {
+        color: #B5B6BC;
+    }
+
+    &--type--textarea {
+        height: 118px;
+    }
+}

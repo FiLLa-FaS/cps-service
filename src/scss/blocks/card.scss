@@ -1,0 +1,117 @@
+.card {
+    min-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+    @media screen and (min-width: $screen-md) {
+        min-width: 224px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+        min-width: 240px;
+    }
+
+    &--type--brands {
+        height: 72px;
+        align-items: center;
+    }
+
+    &--type--technics {
+        height: 160px;
+        align-items: flex-end;
+    }
+
+    &--type--prices {
+        display: block;
+        position: relative;
+        height: 200px;
+        border: none;
+
+        @media screen and (min-width: $screen-md) {
+            display: grid;
+            grid-template-columns: 1fr 85px 85px 120px;
+            gap: 20px;
+            align-items: center;
+            height: auto;
+            border-radius: 0;
+        }
+
+        @media screen and (min-width: $screen-lg) {
+            grid-template-columns: 1fr 120px 120px 120px;
+            padding: 16px 24px;
+        }
+
+        @media screen and (min-width: 1300px) {
+            gap: 100px;
+        }
+    }
+
+    &__logo {
+        object-fit: contain;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    &__cell {
+        margin-top: 16px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: $screen-md) {
+            margin-top: 0;
+        }
+    }
+
+    &__type {
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        opacity: 0.72;
+        margin: 0;
+
+        @media screen and (min-width: $screen-md) {
+            display: none;
+        }
+
+        &--top {
+            @media screen and (min-width: $screen-md) {
+                display: block;
+            } 
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        margin: 4px 0 0;
+    }
+
+    &__order {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+
+        @media screen and (min-width: $screen-md) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
