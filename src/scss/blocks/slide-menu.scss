@@ -22,7 +22,7 @@
         font-weight: 500;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #7E7E82;
+        color: $grey;
         text-decoration: none;
         background: transparent;
         box-sizing: border-box;
@@ -37,7 +37,7 @@
 
         &:focus, &:active {
             border: 2px solid #B8FFEC;
-            background: #fff;
+            background: $white;
             pointer-events: none;
         }
 

@@ -11,7 +11,7 @@
     letter-spacing: -0.2px;
 
     &::placeholder {
-        color: #B5B6BC;
+        color: $light-grey;
     }
 
     &--type--textarea {

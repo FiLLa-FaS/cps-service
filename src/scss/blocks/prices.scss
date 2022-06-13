@@ -1,5 +1,5 @@
 .prices {
-    background-color: #F8F8F8;
+    background-color: $background-grey;
     padding: 0 0 38px;
 
     @media screen and (min-width: $screen-md) {
@@ -72,7 +72,7 @@
                 content: "";
                 height: 1px;
                 width: 100%;
-                background-color: #EAEAEA;
+                background-color: $divider-grey;
                 position: absolute;
                 z-index: 1;
             }
@@ -85,7 +85,7 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
-        color: #1B1C21;
+        color: $dark-grey;
 
         @media screen and (min-width: $screen-md) {
             padding: 0 24px;
@@ -106,7 +106,7 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #1B1C21;
+        color: $dark-grey;
         text-decoration: none;
         margin: 16px 16px 0;
 

@@ -11,12 +11,10 @@ export function initModal() {
 
     const openModal = modalWindow => {
         modalWindow.classList.add('modal--opened');
-        console.log('working');
     }
 
     const closeModal = modalWindow => {
         modalWindow.classList.remove('modal--opened');
-        console.log('working');
     }
 
     for (let i = 0; i < callButtons.length; i++) {

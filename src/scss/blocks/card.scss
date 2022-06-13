@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 16px;
     box-sizing: border-box;
-    background: #FFFFFF;
+    background-color: $white;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
 
@@ -60,7 +60,7 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #1B1C21;
+        color: $dark-grey;
         margin: 0;
         align-self: flex-start;
     }
@@ -80,7 +80,7 @@
     &__type {
         font-size: 14px;
         line-height: 16px;
-        color: #7E7E82;
+        color: $grey;
         opacity: 0.72;
         margin: 0;
 
@@ -99,7 +99,7 @@
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.2px;
-        color: #1B1C21;
+        color: $dark-grey;
         margin: 4px 0 0;
     }
 

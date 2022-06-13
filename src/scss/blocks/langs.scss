@@ -10,11 +10,11 @@
         font-weight: 500;
         letter-spacing: -0.2px;
         text-transform: uppercase;
-        color: #1B1C21;
+        color: $dark-grey;
         text-decoration: none;
 
         &--active {
-            color: #7E7E82;
+            color: $grey;
         }
     }
 }

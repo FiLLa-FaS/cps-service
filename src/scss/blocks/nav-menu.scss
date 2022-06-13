@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: $grey-overlay;
 
     @media screen and (min-width: $screen-lg) {
         display: block;
@@ -25,7 +25,7 @@
         height: 100%;
         box-sizing: border-box;
         overflow-y: scroll;
-        background-color: #fff;
+        background-color: $white;
         padding: 18px 16px 32px;
         z-index: 2;
 
