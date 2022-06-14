@@ -17,7 +17,7 @@
     transition: opacity 0.2s;
 
     &::after {
-        content: url('/src/img/dropdown.svg');
+        content: url('../img/dropdown.svg');
         position: absolute;
         right: 12px;
     }
