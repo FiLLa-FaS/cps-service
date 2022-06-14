@@ -21,8 +21,7 @@
         content: '';
         width: 24px;
         height: 24px;
-        background-image: url('/src/img/expand.svg');
-        // background-image: url('./../../img/expand.svg');
+        background-image: url('../img/expand.svg');
     }
 
     &--inverse::before {
