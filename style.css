@@ -429,7 +429,7 @@
     content: '';
     width: 24px;
     height: 24px;
-    background-image: url("/src/img/expand.svg"); }
+    background-image: url(./img/expand.svg); }
   .button-expand--inverse::before {
     transform: rotate(180deg); }
 
@@ -593,7 +593,7 @@
 .logo {
   min-height: 50px;
   min-width: 96px;
-  background-image: url("/src/img/logo.svg"); }
+  background-image: url(./img/logo.svg); }
 
 .social-links {
   gap: 16px;
@@ -650,23 +650,23 @@
   .link-circle:hover {
     opacity: 0.7; }
   .link-circle--type--close {
-    background-image: url("/src/img/close.svg"); }
+    background-image: url(./img/close.svg); }
   .link-circle--type--search {
-    background-image: url("/src/img/search.svg"); }
+    background-image: url(./img/search.svg); }
   .link-circle--type--call {
-    background-image: url("/src/img/call.svg"); }
+    background-image: url(./img/call.svg); }
   .link-circle--type--chat {
-    background-image: url("/src/img/chat.svg"); }
+    background-image: url(./img/chat.svg); }
   .link-circle--type--profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url(./img/profile.svg); }
   .link-circle--type--burger {
-    background-image: url("/src/img/burger.svg"); }
+    background-image: url(./img/burger.svg); }
   .link-circle--type--repair {
-    background-image: url("/src/img/repair.svg"); }
+    background-image: url(./img/repair.svg); }
   .link-circle--type--status {
-    background-image: url("/src/img/checkstatus.svg"); }
+    background-image: url(./img/checkstatus.svg); }
   .link-circle--type--forward {
-    background-image: url("/src/img/go.svg"); }
+    background-image: url(./img/go.svg); }
 
 .slide-menu {
   padding: 0;
@@ -1165,11 +1165,11 @@
       content: '';
       width: 24px;
       height: 24px;
-      background-image: url("/src/img/arrow-right-red.svg");
+      background-image: url(./img/arrow-right-red.svg);
       position: absolute;
       bottom: 1px;
       right: 160px; }
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 323px) {
         .prices__offer::after {
           position: static; } }
 
