@@ -1,8 +1,8 @@
 .element-hide {
-    overflow: hidden;
+  overflow: hidden;
 
-    &--opened {
-        max-height: none;
-        overflow: auto;
-    }
+  &--opened {
+    max-height: none;
+    overflow: auto;
+  }
 }

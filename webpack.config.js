@@ -1,22 +1,20 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   // Входной файл
-  entry: [
-    './src/js/index.js'
-  ],
+  entry: ['./src/js/index.js'],
 
   // Выходной файл
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
 
   // Source maps для удобства отладки
-  devtool: "source-map",
+  devtool: 'source-map',
 
   module: {
     rules: [
@@ -29,8 +27,8 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-          }
-        }
+          },
+        },
       },
 
       // Компилируем SCSS в CSS
@@ -49,9 +47,9 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
+            loader: 'file-loader?name=./fonts/[name].[ext]',
           },
-        ]
+        ],
       },
 
       // Подключаем картинки из css
@@ -59,9 +57,9 @@ module.exports = {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
           {
-            loader: 'file-loader?name=./img/[name].[ext]'
+            loader: 'file-loader?name=./img/[name].[ext]',
           },
-        ]
+        ],
       },
     ],
   },
@@ -73,7 +71,7 @@ module.exports = {
       minify: {
         removeComments: true,
         collapseWhitespace: false,
-      }
+      },
     }),
 
     // Кладем стили в отдельный файлик
@@ -87,6 +85,6 @@ module.exports = {
         from: './src/img',
         to: 'img',
       },
-    ])
+    ]),
   ],
-};
+}

@@ -6,6 +6,6 @@ export function initAddSwiper() {
       pagination: {
         el: '.swiper-pagination',
       },
-    });
+    })
   }
 }

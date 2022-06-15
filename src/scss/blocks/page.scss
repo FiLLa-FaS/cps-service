@@ -1,12 +1,12 @@
-.page{
-    font-family: 'TT Lakes', Arial, sans-serif;
+.page {
+  font-family: 'TT Lakes', Arial, sans-serif;
 
-    @media screen and (min-width: $screen-lg) {
-        display: flex;
-        justify-content: center;
-    }
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    justify-content: center;
+  }
 
-    &__content {
-        max-width: 1120px;
-    }
+  &__content {
+    max-width: 1120px;
+  }
 }

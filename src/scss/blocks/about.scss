@@ -1,136 +1,136 @@
 .about {
-    background-color: $background-grey;
-    padding-bottom: 35px;
+  background-color: $background-grey;
+  padding-bottom: 35px;
 
+  @media screen and (min-width: $screen-md) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding-bottom: 50px;
+  }
+
+  &__bottom-container {
     @media screen and (min-width: $screen-md) {
-        padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
     }
 
     @media screen and (min-width: $screen-lg) {
-        padding-bottom: 50px;
+      gap: 36px;
+    }
+  }
+
+  &__info-container {
+    padding: 0 16px;
+
+    @media screen and (min-width: $screen-md) {
+      padding: 0 0 0 24px;
     }
 
-    &__bottom-container {
-        @media screen and (min-width: $screen-md) {
-            display: flex;
-            justify-content: space-between;
-            gap: 48px;
-        }
+    @media screen and (min-width: $screen-lg) {
+      padding: 8px 0 0 34px;
+    }
+  }
 
-        @media screen and (min-width: $screen-lg) {
-            gap: 36px;
-        }
+  &__info-expand {
+    margin: 16px 0 0;
+
+    @media screen and (min-width: $screen-md) {
+      margin: 10px 0 0;
+    }
+  }
+
+  &__info-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+
+    @media screen and (min-width: $screen-md) {
+      max-width: 360px;
+      margin: 0 25px 0 0;
     }
 
-    &__info-container {
-        padding: 0 16px;
+    @media screen and (min-width: 1200px) {
+      max-width: 531px;
+    }
+  }
 
-        @media screen and (min-width: $screen-md) {
-            padding: 0 0 0 24px;
-        }
+  &__info-paragraph {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $dark-grey;
+    margin: 0 0 20px;
 
-        @media screen and (min-width: $screen-lg) {
-            padding: 8px 0 0 34px;
-        }
+    &:last-child {
+      margin: 0;
     }
 
-    &__info-expand {
-        margin: 16px 0 0;
+    @media screen and (min-width: $screen-md) {
+      line-height: 20px;
+    }
+  }
 
-        @media screen and (min-width: $screen-md) {
-            margin: 10px 0 0;
-        }
+  &__info-paragraphs {
+    max-height: 90px;
+
+    @media screen and (min-width: $screen-md) {
+      max-height: 160px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: $dark-grey;
+    margin: 0 16px 0 0;
+
+    &::before {
+      content: '';
+      height: 40px;
+      width: 4px;
+      background: $green;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      margin-right: 12px;
+      border-radius: 50% 0 0 50%;
     }
 
-    &__info-image {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin-top: 16px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 6px;
+    @media screen and (min-width: $screen-lg) {
+      margin: 0;
 
-        @media screen and (min-width: $screen-md) {
-            max-width: 360px;
-            margin: 0 25px 0 0;
-        }
+      &::before {
+        margin-right: 30px;
+      }
+    }
+  }
 
-        @media screen and (min-width: 1200px) {
-            max-width: 531px;
-        }
+  &__top-container {
+    padding-top: 24px;
+
+    @media screen and (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      padding: 42px 25px 0 0;
+    }
+  }
+
+  &__slide-menu {
+    margin: 24px 16px;
+
+    @media screen and (min-width: $screen-md) {
+      margin: 32px 24px;
     }
 
-    &__info-paragraph {
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-        color: $dark-grey;
-        margin: 0 0 20px;
-
-        &:last-child {
-            margin: 0;
-        }
-
-        @media screen and (min-width: $screen-md) {
-            line-height: 20px;
-        }  
+    @media screen and (min-width: $screen-lg) {
+      margin: 8px 25px 8px 32px;
     }
-
-    &__info-paragraphs {
-        max-height: 90px;
-
-        @media screen and (min-width: $screen-md) {
-            max-height: 160px;
-        }
-    }
-
-    &__title {
-        display: flex;
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: -0.6px;
-        color: $dark-grey;
-        margin: 0 16px 0 0;
-
-        &::before {
-            content: '';
-            height: 40px;
-            width: 4px;
-            background: $green;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-            margin-right: 12px;
-            border-radius: 50% 0 0 50%;
-        }
-
-        @media screen and (min-width: $screen-lg) {
-            margin: 0;
-
-            &::before {
-                margin-right: 30px;  
-            }
-        }
-    }
-
-    &__top-container {
-        padding-top: 24px;
-
-        @media screen and (min-width: $screen-lg) {
-            display: flex;
-            justify-content: space-between;
-            padding: 42px 25px 0 0;
-        }
-    }
-
-    &__slide-menu {
-        margin: 24px 16px;
-
-        @media screen and (min-width: $screen-md) {
-            margin: 32px 24px;
-        }
-
-        @media screen and (min-width: $screen-lg) {
-            margin: 8px 25px 8px 32px;
-        }
-    }
+  }
 }

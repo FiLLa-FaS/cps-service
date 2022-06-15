@@ -1,48 +1,49 @@
 .slide-menu {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @media screen and (min-width: $screen-lg) {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__link {
     display: flex;
-    overflow-x: scroll;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $grey;
+    text-decoration: none;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    transition: opacity 0.2s linear;
 
     @media screen and (min-width: $screen-lg) {
-        flex-wrap: wrap;
-        overflow: visible;
+      padding: 8px 21px;
     }
 
-    &::-webkit-scrollbar {
-        display: none;
+    &:focus,
+    &:active {
+      border: 2px solid #b8ffec;
+      background: $white;
+      pointer-events: none;
     }
 
-    &__link {
-        display: flex;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: $grey;
-        text-decoration: none;
-        background: transparent;
-        box-sizing: border-box;
-        border-radius: 6px;
-        padding: 8px 16px;
-        border: 2px solid transparent;
-        transition: opacity 0.2s linear;
-
-        @media screen and (min-width: $screen-lg) {
-            padding: 8px 21px;
-        }
-
-        &:focus, &:active {
-            border: 2px solid #B8FFEC;
-            background: $white;
-            pointer-events: none;
-        }
-
-        &:hover {
-            opacity: 0.7;
-        }
+    &:hover {
+      opacity: 0.7;
     }
+  }
 }

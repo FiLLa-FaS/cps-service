@@ -1,46 +1,46 @@
 .swiper {
-    width: 100%;
+  width: 100%;
 
-    &--type--brands {
-        height: 116px;
+  &--type--brands {
+    height: 116px;
 
-        @media screen and (min-width: $screen-md) {
-            height: auto;
-        }
+    @media screen and (min-width: $screen-md) {
+      height: auto;
     }
+  }
 
-    &--type--technics {
-        height: 204px;
+  &--type--technics {
+    height: 204px;
 
-        @media screen and (min-width: $screen-md) {
-            height: auto;
-        }
+    @media screen and (min-width: $screen-md) {
+      height: auto;
     }
+  }
 
-    &--type--prices {
-        height: 244px;
+  &--type--prices {
+    height: 244px;
 
-        @media screen and (min-width: $screen-md) {
-            height: auto;
-        }
+    @media screen and (min-width: $screen-md) {
+      height: auto;
     }
+  }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets {
-    bottom: 0;
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
 }
 
 .swiper-pagination-bullet {
-    background-color: #DDDDDD;
-    opacity: 1;
+  background-color: #dddddd;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: $light-grey;
+  background-color: $light-grey;
 }
 
 .swiper-slide {
-    @media screen and (min-width: $screen-md) {
-        width: auto;
-    }
+  @media screen and (min-width: $screen-md) {
+    width: auto;
+  }
 }

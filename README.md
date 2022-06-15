@@ -4,7 +4,7 @@
 
 Технологии:
 
-* html
-* css
+- html
+- css
 
 [Ссылка на страницу](https://filla-fas.github.io/cps-service/)

@@ -1,50 +1,50 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: $white;
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+
+  &__social-links {
+    display: none;
+
+    @media screen and (min-width: 500px) {
+      display: flex;
+    }
+  }
+
+  &__link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 24px 16px;
-    background-color: $white;
 
-    @media screen and (min-width: $screen-lg) {
-        display: none;
-    }
+    &::after {
+      content: '';
+      width: 2px;
+      height: 32px;
+      background-color: $divider-grey;
+      border-radius: 1px;
+      display: none;
+      transform: translateX(60px);
 
-    &__social-links {
-        display: none;
-
-        @media screen and (min-width: 500px) {
-            display: flex;
-        }
-    }
-
-    &__link {
+      @media screen and (min-width: 500px) {
         display: flex;
-        align-items: center;
-
-        &::after {
-            content: '';
-            width: 2px;
-            height: 32px;
-            background-color: $divider-grey;
-            border-radius: 1px;
-            display: none;
-            transform: translateX(60px);
-
-            @media screen and (min-width: 500px) {
-                display: flex;
-            }
-        } 
+      }
     }
+  }
 
-    &__column {
-        display: flex;
-        align-items: center;
-        gap: 16px; 
-    }
+  &__column {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 
-    &__logo {
-        @media screen and (min-width: 500px) {
-            margin-left: 24px;
-        }
+  &__logo {
+    @media screen and (min-width: 500px) {
+      margin-left: 24px;
     }
+  }
 }

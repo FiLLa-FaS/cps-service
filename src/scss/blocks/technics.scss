@@ -1,62 +1,61 @@
 .technics {
-    background-color: $background-grey;
-    padding: 0 0 38px;
+  background-color: $background-grey;
+  padding: 0 0 38px;
 
+  @media screen and (min-width: $screen-md) {
+    padding: 0 0 34px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 0 50px;
+  }
+
+  &__wrapper {
+    padding: 16px 16px 0;
+    box-sizing: border-box;
 
     @media screen and (min-width: $screen-md) {
-        padding: 0 0 34px;
+      padding: 24px 24px 0;
     }
 
     @media screen and (min-width: $screen-lg) {
-        padding: 0 0 50px;
-    } 
+      padding: 24px 32px 0;
+    }
+  }
 
-    &__wrapper {
-        padding: 16px 16px 0;
-        box-sizing: border-box;
+  &__list {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
-        @media screen and (min-width: $screen-md) {
-            padding: 24px 24px 0;  
-        }
-
-        @media screen and (min-width: $screen-lg) {
-            padding: 24px 32px 0;
-        }
+    @media screen and (min-width: $screen-md) {
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      max-height: 160px;
     }
 
-    &__list {
-        display: flex;
-        gap: 16px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+    @media screen and (min-width: $screen-lg) {
+      gap: 16px 32px;
+    }
+  }
 
-        @media screen and (min-width: $screen-md) {
-            flex-wrap: wrap;
-            gap: 16px 24px;
-            max-height: 160px;
-        }
+  &__item {
+    display: block;
+    flex-grow: 1;
+  }
 
-        @media screen and (min-width: $screen-lg) {
-            gap: 16px 32px;
-        }
+  &__expand {
+    display: none;
+
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      margin: 24px 0 0 24px;
     }
 
-    &__item {
-        display: block;
-        flex-grow: 1;
+    @media screen and (min-width: $screen-lg) {
+      margin-left: 32px;
     }
-
-    &__expand {
-        display: none;
-
-        @media screen and (min-width: $screen-md) {
-            display: flex;
-            margin: 24px 0 0 24px;
-        }
-
-        @media screen and (min-width: $screen-lg) {
-            margin-left: 32px;
-        }
-    }
+  }
 }

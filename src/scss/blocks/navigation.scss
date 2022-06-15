@@ -1,48 +1,47 @@
 .navigation {
+  &__list {
+    list-style: none;
+    margin: 50px 0 0;
+    padding: 0;
+  }
 
-    &__list {
-        list-style: none;
-        margin: 50px 0 0;
-        padding: 0;
+  &__item {
+    margin-bottom: 32px;
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
+  }
 
-    &__item {
-        margin-bottom: 32px;
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: $dark-grey;
+    text-decoration: none;
 
-        &:last-of-type {
-            margin-bottom: 0; 
+    &--active {
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: $grey;
+      pointer-events: none;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -16px;
+        height: 32px;
+        width: 4px;
+        background: $green;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 50% 0 0 50%;
+
+        @media screen and (min-width: 360px) {
+          left: -24px;
         }
+      }
     }
-
-    &__link {
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        letter-spacing: -0.2px;
-        color: $dark-grey;
-        text-decoration: none;
-
-        &--active {
-            display: flex;
-            align-items: center;
-            position: relative;
-            color: $grey;
-            pointer-events: none;
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: -16px;
-                height: 32px;
-                width: 4px;
-                background: $green;
-                transform: matrix(-1, 0, 0, 1, 0, 0);
-                border-radius: 50% 0 0 50%;
-
-                @media screen and (min-width: 360px) {
-                    left: -24px;
-                }
-            }
-        }
-    }
+  }
 }

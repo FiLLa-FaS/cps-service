@@ -1,20 +1,20 @@
 .title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    color: $grey;
-    margin: 0;
-    padding: 16px;
-    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
-    border-top: 1px solid #D9FFF5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: $grey;
+  margin: 0;
+  padding: 16px;
+  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-top: 1px solid #d9fff5;
 
-    @media screen and (min-width: $screen-md) {
-        padding: 16px 24px;
-    }
+  @media screen and (min-width: $screen-md) {
+    padding: 16px 24px;
+  }
 
-    @media screen and (min-width: $screen-lg) {
-        padding: 16px 32px;
-    }
+  @media screen and (min-width: $screen-lg) {
+    padding: 16px 32px;
+  }
 }
