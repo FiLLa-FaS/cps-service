@@ -854,17 +854,18 @@ template {
     .service {
       padding: 0 0 50px; } }
   .service__wrapper {
-    padding: 16px 16px 0;
-    box-sizing: border-box; }
+    padding: 16px 0 0;
+    box-sizing: border-box;
+    width: calc(100% - 32px); }
     @media screen and (min-width: 650px) {
       .service__wrapper {
-        padding: 24px 24px 0; } }
+        padding: 24px 24px 0;
+        width: auto; } }
     @media screen and (min-width: 1000px) {
       .service__wrapper {
         padding: 24px 32px 0; } }
   .service__list {
     display: flex;
-    gap: 16px;
     padding: 0;
     margin: 0;
     list-style: none; }
@@ -1003,17 +1004,18 @@ template {
     .technics {
       padding: 0 0 50px; } }
   .technics__wrapper {
-    padding: 16px 16px 0;
-    box-sizing: border-box; }
+    padding: 16px 0 0;
+    box-sizing: border-box;
+    width: calc(100% - 32px); }
     @media screen and (min-width: 650px) {
       .technics__wrapper {
-        padding: 24px 24px 0; } }
+        padding: 24px 24px 0;
+        width: auto; } }
     @media screen and (min-width: 1000px) {
       .technics__wrapper {
         padding: 24px 32px 0; } }
   .technics__list {
     display: flex;
-    gap: 16px;
     padding: 0;
     margin: 0;
     list-style: none; }
@@ -1279,6 +1281,11 @@ template {
   .element-hide--opened {
     max-height: none;
     overflow: auto; }
+  .element-hide--type--slider {
+    overflow: visible; }
+    @media screen and (min-width: 650px) {
+      .element-hide--type--slider {
+        overflow: hidden; } }
 
 
 /*# sourceMappingURL=style.css.map*/
