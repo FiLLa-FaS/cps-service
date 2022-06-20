@@ -2,17 +2,28 @@ export function initNav() {
   let menuButton = document.querySelector('.header__link')
   let navClose = document.querySelector('.nav-menu__close')
   let nav = document.querySelector('.nav-menu')
+  let page = document.querySelector('.page')
 
-  function openClose() {
-    nav.classList.toggle('nav-menu--opened')
+  function openNav() {
+    nav.classList.add('nav-menu--opened')
+    page.style.overflow = 'hidden'
   }
 
-  window.onclick = function (e) {
-    if (e.target == nav) {
-      nav.classList.remove('nav-menu--opened')
+  function closeNav() {
+    nav.classList.remove('nav-menu--opened')
+    page.style.overflow = 'visible'
+  }
+
+  menuButton.addEventListener('click', openNav)
+  navClose.addEventListener('click', closeNav)
+  document.addEventListener('keydown', function (event) {
+    if (event.code == 'Escape') {
+      closeNav()
     }
-  }
-
-  menuButton.addEventListener('click', openClose)
-  navClose.addEventListener('click', openClose)
+  })
+  window.addEventListener('click', function (event) {
+    if (event.target == nav) {
+      closeNav()
+    }
+  })
 }

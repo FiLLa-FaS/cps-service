@@ -5,4 +5,12 @@
     max-height: none;
     overflow: auto;
   }
+
+  &--type--slider {
+    overflow: visible;
+
+    @media screen and (min-width: $screen-md) {
+      overflow: hidden;
+    }
+  }
 }

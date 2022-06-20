@@ -21,7 +21,7 @@
     background-color: $white;
     padding: 24px 16px;
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-md) {
       width: 440px;
       box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
         16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -30,7 +30,7 @@
   }
 
   &__close {
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-md) {
       position: absolute;
       top: 32px;
       left: -73px;
@@ -46,7 +46,7 @@
     color: $dark-grey;
     margin: 32px 0 0 -16px;
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-md) {
       margin: 0 0 0 -32px;
     }
 
@@ -59,7 +59,7 @@
       margin-right: 12px;
       border-radius: 50% 0 0 50%;
 
-      @media screen and (min-width: $screen-lg) {
+      @media screen and (min-width: $screen-md) {
         margin-right: 30px;
       }
     }
@@ -98,7 +98,7 @@
     margin-top: 20px;
     align-self: flex-end;
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-md) {
       margin-top: 23px;
     }
   }

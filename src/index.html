@@ -79,10 +79,14 @@
             ></a>
           </li>
         </ul>
-        <div class="nav-menu__contacts contacts">
-          <a href="#" class="contacts__email">mail@cps.com</a>
-          <a href="#" class="contacts__phone">8 800 890 8900</a>
-        </div>
+        <address class="nav-menu__contacts contacts">
+          <a href="mailto:mail@cps.com" class="contacts__email link"
+            >mail@cps.com</a
+          >
+          <a href="tel:+78008908900" class="contacts__phone link"
+            >8 800 890 8900</a
+          >
+        </address>
         <ul class="nav-menu__langs langs">
           <li>
             <a href="#" class="langs__lang langs__lang--active link">Ru</a>
@@ -199,11 +203,13 @@
         <section class="service">
           <h2 class="service__title title">Ремонт техники различных брендов</h2>
           <div class="swiper swiper--type--brands service__wrapper">
-            <ul class="swiper-wrapper service__list element-hide">
+            <ul
+              class="swiper-wrapper service__list element-hide element-hide--type--slider"
+            >
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-lenovo.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -216,7 +222,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-samsung.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -229,7 +235,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-apple.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -242,7 +248,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-viewsonic.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -255,7 +261,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-bosch.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -268,7 +274,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-acer.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -281,7 +287,7 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-hp.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -294,7 +300,20 @@
               <li class="swiper-slide service__item">
                 <div class="service__card card card--type--brands">
                   <img
-                    src="./img/card-logo.png"
+                    src="./img/logo-sony.png"
+                    alt="Логотип компании"
+                    class="card__logo"
+                  />
+                  <button
+                    type="button"
+                    class="card__forward link-circle link-circle--type--forward"
+                  ></button>
+                </div>
+              </li>
+              <li class="swiper-slide service__item">
+                <div class="service__card card card--type--brands">
+                  <img
+                    src="./img/logo-acer.png"
                     alt="Логотип компании"
                     class="card__logo"
                   />
@@ -314,7 +333,9 @@
         <section class="technics">
           <h2 class="technics__title title">Ремонт различных видов техники</h2>
           <div class="swiper swiper--type--technics technics__wrapper">
-            <ul class="swiper-wrapper technics__list element-hide element-hide">
+            <ul
+              class="swiper-wrapper technics__list element-hide element-hide element-hide--type--slider"
+            >
               <li class="swiper-slide technics__item">
                 <div class="technics__card card card--type--technics">
                   <h3 class="card__title">Ремонт ноутбуков</h3>
